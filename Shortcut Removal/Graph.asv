@@ -1,0 +1,8 @@
+function[g]=Graph(D,P);
+
+    N = size(D,1); 
+    [tmp, ind] = sort(D); 
+     for i=1:N
+          g(i,:)=P(i,:)-P(ind(1,i)); 
+     end;
+
